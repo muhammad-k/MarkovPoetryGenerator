@@ -6,6 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Set<String> temp = new HashSet<>();
+
+
+        temp.add("hello");
+        temp.add("temp");
+        temp.add("world");
+
+        int temp2 = (int)((temp.size() * Math.random()));
+        System.out.println(temp2);
+
+
+
         Map<String,Set<String>> songMap = (loadMap(sanitizeCorpus("The gal dem Schillaci, Sean da Paul\n" +
                 "So me give it to, so me give to, so me give it to, to all girls\n" +
                 "Five million and forty naughty shorty,\n" +
@@ -54,34 +66,43 @@ public class Main {
                 "Oh lord, gal I got the right tactics to turn you on, and girl I,\n" +
                 "Wanna be the Papa, You can be the Mom, oh oh!")));
 
+        randomKey(songMap);
 
-                for(Map.Entry<String, Set<String>> entry : songMap.entrySet()){
-                    System.out.println("KEY: " + entry.getKey());
-                    System.out.println("VALUES: " + entry.getValue());
-                    System.out.println("-------------------------");
-                }
+
+        for(Map.Entry<String, Set<String>> entry : songMap.entrySet()){
+            System.out.println("KEY: " + entry.getKey());
+            System.out.println("VALUES: " + entry.getValue());
+            System.out.println("-------------------------");
+        }
+
 
 
     }
 
-    public static String[] sanitizeCorpus(String corpus){
+    private static String[] sanitizeCorpus(String corpus){
 
         //Takes corpus, turns it lowercase, removes punctuation and then replaces the line break with a ""
         corpus = corpus.toLowerCase().replaceAll("\\p{Punct}","").replaceAll("\n", " ");
 
+        //Turning the entire string into single word arrays for easier traversal
         String[] corpusArray = corpus.split(" ");
 
         return corpusArray;
     }
 
-    public static Map loadMap(String[]  corpusArray){
+    private static Map loadMap(String[]  corpusArray){
 
+        //This is what holds all the values, a map where each key is a unique word
+        //I used a set because we do not want the following words to repeat
         Map<String,Set<String>> songMap = new HashMap<>();
 
         for(int i = 0; i < corpusArray.length - 1; i++){
 
+            //Here we check if the key is contained within the map,
+            //if it is we add the value to the set
             if(songMap.containsKey(corpusArray[i]))
                 songMap.get(corpusArray[i]).add(corpusArray[i+1]);
+            //Otherwise, we create a new key and then
             else{
                 Set<String> valList = new HashSet<>();
                 valList.add(corpusArray[i+1]);
@@ -92,5 +113,32 @@ public class Main {
 
         return songMap;
     }
+
+    //Returns a random key from the keyset
+    private static String randomKey(Map corpusPairs){
+
+        List<String> keysAsArray = new ArrayList<>(corpusPairs.keySet());
+
+        return keysAsArray.get((int)((keysAsArray.size() * Math.random())));
+    }
+
+
+    private static String writeLine(Map corpusPairs, int length){
+
+        String line = "";
+
+        for(int i = 0; i < length; i++){
+
+            String randomString = randomKey(corpusPairs);
+
+            //---------------------------LAST EDIT  HERE---------------------
+            String temp = corpusPairs.get(randomString).toString();
+
+        }
+
+        return "";
+    }
+
+
 }
 
