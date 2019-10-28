@@ -4,8 +4,6 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) {
-
         /*String corpus = "Thank you. Thank you very much. Hello, Dallas, it's great to be with you tonight. Thank you, and I am thrilled to be here deep in the heart of Texas, where we just opened a beautiful new Louie Vuitton plant. When I'm with the freedom-loving patriots of the Lone Star State I love it. There has never been a better time to be a proud Texan and there's never been a better time to be a proud American."
                     + "There never has, there never has. So I came from a small town, Alvarado, Texas, where we celebrated the incredible revival of American manufacturing and we opened up some beautiful places. I'll tell you this place is doing great and created in a very short period of time, an extra 1,000 jobs for Texas. Since my election, we've created 775,000 new jobs across the state, including 70,000 Texas manufacturing jobs, they said those jobs had disappeared, didn't they huh, hey man?"
                     + "Our country is once again living by two simple rules: Buy American and hire American. The economy is booming, our people are prospering, our country is thriving, and our nation is stronger than ever before, but the more America achieves the more hateful and enraged these crazy Democrats become. Crazy."
@@ -25,136 +23,81 @@ public class Main {
                     + "Nobody noticed it. I noticed it. The flairer, do you remember he was flailing all over the place? I said why is this guy hot? John Cornyn is going to win so easily, just like Ted Cruz won. He's going to win, no matter what happens, but John Cornyn is not talking about Bado anymore, because Bado in a few Short weeks, got rid of guns and got rid of religion.";
 */
 
-        String corpus = "Go, go 'head (Go, go, go)\n" +
-                "Go, go, go 'head (Go, go, go)\n" +
-                "Go, go, go, go, go, go 'head\n" +
-                "Go, go, go, go, go, go 'head\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "You, you fancy huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did, uh\n" +
-                "Nails done, hair done, everything did\n" +
-                "Oh, you fancy, huh?\n" +
-                "You getting ready so I know we gon' be here awhile\n" +
-                "In the bathroom flat irons and nail files\n" +
-                "Spending hours in salons on your hairstyles\n" +
-                "In the mall steady racking up the air miles\n" +
-                "Hit the gym, step on the scales, stare at the number\n" +
-                "You say you droppin' 10 pounds preparin' for summer\n" +
-                "And you don't do it for the man, men never notice\n" +
-                "You just do it for yourself, you the fucking coldest\n" +
-                "Intelligent too, ooh you're my sweetheart\n" +
-                "I've always liked my women book and street smart\n" +
-                "Long as they got a little class like half days\n" +
-                "And the confidence to overlook my past ways\n" +
-                "Time heals all and heels hurt to walk in\n" +
-                "But they go with the clutch that you carry your lip gloss in\n" +
-                "And look, I really think that nobody does it better\n" +
-                "I love the way you put it together, uh\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "You, you fancy huh?\n" +
-                "Oh, you fancy, huh??\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did ('Sup, girl)\n" +
-                "Oh, you fancy, huh?\n" +
-                "Well, aren't you a breath of fresh air?\n" +
-                "From all these superficial gold digging bitches in here\n" +
-                "They get a baller, think that they ain't got to pick a career\n" +
-                "Guess they plan on sucking dicks until some millions appear\n" +
-                "Like \"Voilà!\" You do it right he might just buy you a car\n" +
-                "Now she play these suckers just like B.o.B play the guitar\n" +
-                "Now here you are with your girls having drinks at the bar\n" +
-                "I say I'm buying, you decline, that is kinda bizarre\n" +
-                "Independent with the demeanor of an R&B singer (check)\n" +
-                "Naked ring finger, M3 Beamer (check, check)\n" +
-                "Champagne Range, triple-white Jag\n" +
-                "Closet full of brand new clothes and handbags\n" +
-                "Alexander McQueen, Prada, Gucci, Chanel\n" +
-                "D&G, BCBG, Versace, Louis and Bebe\n" +
-                "You ain't needy, greedy or easy as these other breezy's\n" +
-                "Who fuck for bottles of Riesling and bowls of baked ziti\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did (oh!)\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "You, you fancy huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did\n" +
-                "Oh, you fancy, huh?\n" +
-                "Atlanta girls, let me see your hands (yeah)\n" +
-                "Wave 'em at them bitches hating on you with their friends (come on)\n" +
-                "Girl you got it, let 'em know that everything big\n" +
-                "Nails done hair done, everything big\n" +
-                "And my NY girls, let me see your hands (woo)\n" +
-                "Wave 'em at them bitches hating on you with their friends (come on)\n" +
-                "Girl you got it, let 'em know that everything big\n" +
-                "Nails done hair done, everything big\n" +
-                "And my LA girls, let me see your hands\n" +
-                "Wave 'em at them bitches hating on you with their friends (come on)\n" +
-                "Girl you got it, let 'em know everything big\n" +
-                "Nails done hair done, everything big\n" +
-                "And my TO girls, let me see your hands\n" +
-                "Wave 'em at them bitches hating on you with their friends (yeah)\n" +
-                "Girl you got it, let 'em know that everything big\n" +
-                "Nails done, hair done, nails done, hair done\n" +
-                "Say go Cinderella, go Cinderella\n" +
-                "Orgasm blush, lipstick and concealer\n" +
-                "Devil in a tight dress, girl you a killer\n" +
-                "And ain't nobody realer, and ain't nobody realer, go\n" +
-                "Go, go, go, go, go, go, go (showtime)\n" +
-                "Go, go, go, go, go (as we proceed)\n" +
-                "Uh, 5 and a half in boys, ass is off the hook\n" +
-                "Cinderella 'bout to lose the glass off her foot\n" +
-                "And when I find it is when I find you\n" +
-                "And we can do the things we never got the time to\n" +
-                "Better late than never but never late is better\n" +
-                "They tell me time is money, well we'll spend it together\n" +
-                "I'm down for whatever, you just lead the way\n" +
-                "We go to dinner you don't even look at me to pay\n" +
-                "Mature women with more than me were the first to tempt me\n" +
-                "And Jason had this girl Tammy with a purple Bentley\n" +
-                "How she got it I ain't never get to ask\n" +
-                "I just knew that she was fine like a ticket on the dash\n" +
-                "Yeah, but shout out to the homeowners\n" +
-                "The girls that got diplomas and enough money to loan us\n" +
-                "A little something extra, should we ever need it\n" +
-                "If it sounds like you, then let me hear you repeat it\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did\n" +
-                "Oh, you fancy, huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "You, you fancy huh?\n" +
-                "Oh, you fancy, huh?\n" +
-                "Nails done, hair done, everything did\n" +
-                "Nails done, hair done, everything did\n" +
-                "Oh, you fancy, huh? (fancy)";
+        /*
+            //Outputs all pairs in the string
+            for(Map.Entry<String, List<String>> entry : corpusMap.entrySet()){
+            System.out.println("KEY: " + entry.getKey());
+            System.out.println("VALUE: " + entry.getValue() );
+            System.out.println("----------------------------");
+        }*/
+
+        /*"Just a short time ago, I had the honor of presiding over the swearing-in of five new great American citizens. It was a beautiful ceremony and a moving reminder of our nation’s proud history of welcoming legal immigrants from all over the world into our national family.\n" +
+                "\n" +
+                "I told them that the beauty and majesty of citizenship is that it draws no distinctions of race, or class, or faith, or gender or background. All Americans, whether first generation or tenth generation, are bound together in love and loyalty, friendship and affection.\n" +
+                "\n" +
+                "We are all equal. We are one team, and one people, proudly saluting one great American flag. We believe in a safe and lawful system of immigration, one that upholds our laws, our traditions, and our most cherished values.\n" +
+                "\n" +
+                "Unfortunately, our immigration system has been badly broken for a very long time. Over the decades, many Presidents and many lawmakers have come and gone, and no real progress has been made on immigration.\n" +
+                "\n" +
+                "We are now living with the consequences—and they are tragic—brought about by decades of political stalemate, partisan gridlock, and national neglect.\n" +
+                "\n" +
+                "There is a humanitarian and security crisis on our southern border that requires urgent action. Thousands of children are being exploited by ruthless coyotes and vicious cartels and gangs. One in three women is sexually assaulted on the dangerous journey north. In fact, many loving mothers give their young daughters birth control pills for the long journey up to the United States because they know they may be raped or sexually accosted or assaulted. Nearly 50 migrants a day are being referred for urgent medical care.\n" +
+                "\n" +
+                "Vast quantities of lethal narcotics are flooding through our border and into our communities, including meth, cocaine, heroin, and fentanyl. Drugs kill 78,000 Americans a year and cost our society in excess of $700 billion. Heroin alone kills 300 Americans a week, 90 percent of which comes across our southern border. We can stop heroin.\n" +
+                "\n" +
+                "Illegal immigration reduces wages and strains public services. The lack of border control provides a gateway—and a very wide and open gateway—for criminals and gang members to enter the United States, including the criminal aliens who murdered a brave California police officer only a day after Christmas.\n" +
+                "\n" +
+                "I’ve gotten to know and love Angel moms, dads, and family who lost loved ones to people illegally in our country. I want this to end. It’s got to end now. These are not talking points. These are the heartbreaking realities that are hurting innocent, precious human beings every single day on both sides of the border.\n" +
+                "\n" +
+                "As a candidate for President, I promised I would fix this crisis, and I intend to keep that promise one way or the other. Our immigration system should be the subject of pride, not a source of shame, as it is all over the world. Our immigration system should be the envy of the world, not a symbol of disunity and dysfunction.\n" +
+                "\n" +
+                "The good news is, these problems can all be solved but only if we have the political courage to do what is just and what is right.\n" +
+                "\n" +
+                "Both sides in Washington must simply come together, listen to each other, put down their armor, build trust, reach across the aisle, and find solutions.\n" +
+                "\n" +
+                "It is time to reclaim our future from the extreme voices who fear compromise and demand open borders, which means drugs pouring in, human trafficking, and a lot of crime.\n" +
+                "\n" +
+                "That is why I am here today, to break the logjam and provide Congress with a path forward to end the government shutdown and solve the crisis on the southern border. If we are successful in this effort, we will then have the best chance in a very long time at real, bipartisan immigration reform. And it won’t stop here. It will keep going until we do it all.\n" +
+                "\n" +
+                "The proposal I will outline today is based on, first and foremost, on input from our border agents and homeland security professionals—and professionals they are. They know what they’re doing. It is a compassionate response to the ongoing tragedy on our southern border.\n" +
+                "\n" +
+                "In recent weeks, we have met with large numbers of Democrat lawmakers to hear their ideas and suggestions. By incorporating the priorities of rank-and-file Democrats in our plan, we hope they will offer their enthusiastic support. And I think many will.\n" +
+                "\n" +
+                "This is a commonsense compromise both parties should embrace. The radical left can never control our borders. I will never let it happen. Walls are not immoral. In fact, they are the opposite of immoral because they will save many lives and stop drugs from pouring into our country.\n" +
+                "\n" +
+                "Our plan includes the following: $800 million in urgent humanitarian assistance; $805 million for drug detection technology to help secure our ports of entry; an additional 2,750 border agents and law enforcement professionals; 75 new immigration judge teams to reduce the court backlog of, believe it or not, almost 900,000 cases. However, the whole concept of having lengthy trials for anyone who sets one foot in our country unlawfully must be changed by Congress. It is unsustainable. It is ridiculous. Few places in the world would even consider such an impossible nightmare.\n" +
+                "\n" +
+                "Our plan includes critical measures to protect migrant children from exploitation and abuse. This includes a new system to allow Central American minors to apply for asylum in their home countries, and reform to promote family reunification for unaccompanied children, thousands of whom wind up on our border doorstep.\n" +
+                "\n" +
+                "To physically secure our border, the plan includes $5.7 billion for a strategic deployment of physical barriers, or a wall. This is not a 2,000-mile concrete structure from sea to sea. These are steel barriers in high-priority locations. Much of the border is already protected by natural barriers such as mountains and water. We already have many miles of barrier, including 115 miles that we are currently building or under contract.  It will be done quickly.  Our request will add another 230 miles this year in the areas our border agents most urgently need.  It will have an unbelievable impact.\n" +
+                "\n" +
+                "If we build a powerful and fully designed see-through steel barrier on our southern border, the crime rate and drug problem in our country would be quickly and greatly reduced.  Some say it could be cut in half.  Because these criminals, drug smugglers, gangs, and traffickers do not stop at our border; they permeate throughout our country and they end up in some places where you’d least expect them. They go all over our country. A steel barrier will help us stop illegal immigration while safely directing commerce to our lawful ports of entry.\n" +
+                "\n" +
+                "Many of these security ideas have been proposed by Democrats themselves, and all of them have been supported by Democrats in the past, including a physical barrier, wall, or fence.\n" +
+                "\n" +
+                "Furthermore, in order to build the trust and goodwill necessary to begin real immigration reform, there are two more elements to my plan.\n" +
+                "\n" +
+                "Number one is three years of legislative relief for 700,000 DACA recipients brought here unlawfully by their parents at a young age many years ago. This extension will give them access to work permits, Social Security numbers, and protection from deportation, most importantly.\n" +
+                "\n" +
+                "Secondly, our proposal provides a three-year extension of Temporary Protected Status, or TPS. This means that 300,000 immigrants whose protected status is facing expiration will now have three more years of certainty so that Congress can work on a larger immigration deal, which everybody wants—Republicans and Democrats. And our farmers and vineyards won’t be affected because lawful and regulated entry into our country will be easy and consistent.\n" +
+                "\n" +
+                "That is our plan: border security, DACA, TPS, and many other things. Straightforward, fair, reasonable, and common sense, with lots of compromise. Senate Majority Leader Mitch McConnell has pledged to bring this bill to a vote this week in the United States Senate.\n" +
+                "\n" +
+                "Our proposal is not intended to solve all of our immigration challenges. This plan solves the immediate crisis—and it is a horrible crisis. It is a humanitarian crisis like we rarely see in our country. And it provides humanitarian relief, delivers real border security, and immediately reopens our federal government.\n" +
+                "\n" +
+                "If we are successful in this effort, then we can start the border [broader] project of remaking our immigration system for the 21st century. Once the government is open and we have made a down payment on border security, and immigration reform starts to happen, I plan to convene weekly bipartisan meetings at the White House so we can do a finished product, a great product—a product that we can all be proud of, having to do with that elusive immigration problem.\n" +
+                "\n" +
+                "Whatever we do, I can promise you this: I will never forget that my first duty, and ultimate loyalty, is to you, the American people. Any reforms we make to our immigration system will be designed to improve your lives, make your communities safer, and make our nation more prosperous and secure for generations to come.\n" +
+                "\n" +
+                "Thank you and God bless America.  Thank you.";*/
+
+    public static void main(String[] args) {
+
+        String corpus = "";
 
         Map<String,List<String>> corpusMap = (loadMap(sanitizeCorpus(corpus)));
 
-        System.out.println(writeLines(corpusMap, 7, 7));
+        System.out.println(writeLines(corpusMap, 1, 35));
 
     }
 
