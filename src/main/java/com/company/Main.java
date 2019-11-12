@@ -4,24 +4,6 @@ import java.util.*;
 
 public class Main {
 
-        /*String corpus = "Thank you. Thank you very much. Hello, Dallas, it's great to be with you tonight. Thank you, and I am thrilled to be here deep in the heart of Texas, where we just opened a beautiful new Louie Vuitton plant. When I'm with the freedom-loving patriots of the Lone Star State I love it. There has never been a better time to be a proud Texan and there's never been a better time to be a proud American."
-                    + "There never has, there never has. So I came from a small town, Alvarado, Texas, where we celebrated the incredible revival of American manufacturing and we opened up some beautiful places. I'll tell you this place is doing great and created in a very short period of time, an extra 1,000 jobs for Texas. Since my election, we've created 775,000 new jobs across the state, including 70,000 Texas manufacturing jobs, they said those jobs had disappeared, didn't they huh, hey man?"
-                    + "Our country is once again living by two simple rules: Buy American and hire American. The economy is booming, our people are prospering, our country is thriving, and our nation is stronger than ever before, but the more America achieves the more hateful and enraged these crazy Democrats become. Crazy."
-                    + "They're crazy. They're, crazy. At stake in this fight is the survival of American democracy itself and don't kid yourself, that's what they want. They are destroying this country, but we will never let it happen not even close. For three straight years, radical Democrats have been trying to overthrow the results of a great, great election, maybe, maybe the greatest election in the history of our country, and they want to impose an extreme agenda."
-                    + "They cannot pass it and they cannot win it at the ballot box. They're not going to win. They're not and even going to -- they won't come close in 2020. They know it. They know it. They're not going to win it. They say, let's see, what's another idea? What's another idea? How do we win this election? [Inaudible] You know, I really don't believe anymore that they love our country."
-                    + "It doesn't play well because it was perfect, so he made up a totally false conversation with the Ukrainian President and we caught him cold. Everybody knew it anyway. See? We did one thing, you always have to do the unexpected. They never thought I'd release the conversation with the Ukrainian President."
-                    + "I want to get him before Congress and I want to see what he has to say. You know they say he has immunity. Why would you have immunity for outright fraud? Why do you have immunity? Why? He's a fraud. We're fighting a campaign against leftists, socialists, and globalists who want to return to reckless wars, open borders, rampant crime, and totally disastrous one-way trade deals."
-                    + "We're changing that one around very quickly. They believe America is the world's piggy bank and that your tax dollars should subsidize the economy, military, and defense of every other nation in the world, but our own. It's not happening anymore. Our political opposition made its fortune selling out our nation and its citizens, and you know, that's what's been happening, and that's why 2016 was so important, and that's why 2020 -- I can never say it's more important, but you know, it's like the roots of a tree."
-                    + "Can you believe it? I've been a politician for three years. I can't believe that. I never thought I'd be called a politician. I don't like it, but it is what it is, but we're finally, again, putting America first. The radical Democrats want to destroy America, as we know it. They want to indoctrinate our children and teach them that America is a sinful wicked nation."
-                    + "You see that happening all the time and I know it from personal experience what they want to teach your kids, not good. They come home, mommy, daddy, this is what I learned, and you're going, oh no, don't tell me. Let's get them into another school fast. They want to disarm law-abiding citizens, they want to take your guns away and they want to win so far left judges to shred our Constitution."
-                    + "It's not happening. They want to tear down symbols of faith and drive Christians and religious believers from the public square. They want to silence your voices on social media and they want the government to censor, muzzle and shut down conservative voices. You know that. If they didn't hate our country, they wouldn't be doing this to our country."
-                    + "They wouldn't be doing it because they know better. They know better. As an example, we're building a great wall along the Southern border and it's going up rapidly, going up. And you know five years ago, almost every one of them wanted a wall. Until I came along, and I said, we're going to build a great walk because they could never get it done and then they stopped the funding."
-                    + "They made it almost impossible. Few people would have been able to do what we did, but we got it from here, and we got it from there, and we got it from all over the place, and we're building that sucker right now, and it's having a tremendous effect already. Not easy. Highest level. Everything we said it would be. It's moving rapidly, although, the fake news back there, they don't want to talk about it. [Audience shouts \"Boo\"] They don't want to talk about it. Look at all those cameras, do you believe it? Look at all those red lights, don't worry, I won't say anything bad about your network."
-                    + "Because a lot of times I get ready to do a number on these phony networks. And you know, you see those red lights go off, off, off, off. They don't want their viewers to see it. But that's OK. I'm not going to say it tonight, I'm going to say your legitimate media. I don't actually mean that. But you look at that, but look at all those cameras."
-                    + "You know that's like the Academy Awards used to be because -- before it failed. Do you know why it failed? Do you know why it failed? Because they came after us. That's why it failed. It failed because they had stupid people saying horrible things about us, stupid, stupid people. They are stupid people and their ratings have dropped like a rocket and I love seeing it. I'm telling you."
-                    + "Love it. But no matter how hard they try, they will fail, because the people of Texas and the people of America will never surrender our freedom to those people right there. We will stand strong for family, faith, God, and for our country. Last week, a very dumb Democrat candidate for President."
-                    + "Nobody noticed it. I noticed it. The flairer, do you remember he was flailing all over the place? I said why is this guy hot? John Cornyn is going to win so easily, just like Ted Cruz won. He's going to win, no matter what happens, but John Cornyn is not talking about Bado anymore, because Bado in a few Short weeks, got rid of guns and got rid of religion.";
-*/
 
         /*
             //Outputs all pairs in the string
@@ -93,11 +75,89 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String corpus = "";
+        String corpus = "Thank you. Thank you very much. Hello, Dallas, it's great to be with you tonight. Thank you, and I am thrilled to be here deep in the heart of Texas, where we just opened a beautiful new Louie Vuitton plant. When I'm with the freedom-loving patriots of the Lone Star State I love it. There has never been a better time to be a proud Texan and there's never been a better time to be a proud American."
+                + "There never has, there never has. So I came from a small town, Alvarado, Texas, where we celebrated the incredible revival of American manufacturing and we opened up some beautiful places. I'll tell you this place is doing great and created in a very short period of time, an extra 1,000 jobs for Texas. Since my election, we've created 775,000 new jobs across the state, including 70,000 Texas manufacturing jobs, they said those jobs had disappeared, didn't they huh, hey man?"
+                + "Our country is once again living by two simple rules: Buy American and hire American. The economy is booming, our people are prospering, our country is thriving, and our nation is stronger than ever before, but the more America achieves the more hateful and enraged these crazy Democrats become. Crazy."
+                + "They're crazy. They're, crazy. At stake in this fight is the survival of American democracy itself and don't kid yourself, that's what they want. They are destroying this country, but we will never let it happen not even close. For three straight years, radical Democrats have been trying to overthrow the results of a great, great election, maybe, maybe the greatest election in the history of our country, and they want to impose an extreme agenda."
+                + "They cannot pass it and they cannot win it at the ballot box. They're not going to win. They're not and even going to -- they won't come close in 2020. They know it. They know it. They're not going to win it. They say, let's see, what's another idea? What's another idea? How do we win this election? [Inaudible] You know, I really don't believe anymore that they love our country."
+                + "It doesn't play well because it was perfect, so he made up a totally false conversation with the Ukrainian President and we caught him cold. Everybody knew it anyway. See? We did one thing, you always have to do the unexpected. They never thought I'd release the conversation with the Ukrainian President."
+                + "I want to get him before Congress and I want to see what he has to say. You know they say he has immunity. Why would you have immunity for outright fraud? Why do you have immunity? Why? He's a fraud. We're fighting a campaign against leftists, socialists, and globalists who want to return to reckless wars, open borders, rampant crime, and totally disastrous one-way trade deals."
+                + "We're changing that one around very quickly. They believe America is the world's piggy bank and that your tax dollars should subsidize the economy, military, and defense of every other nation in the world, but our own. It's not happening anymore. Our political opposition made its fortune selling out our nation and its citizens, and you know, that's what's been happening, and that's why 2016 was so important, and that's why 2020 -- I can never say it's more important, but you know, it's like the roots of a tree."
+                + "Can you believe it? I've been a politician for three years. I can't believe that. I never thought I'd be called a politician. I don't like it, but it is what it is, but we're finally, again, putting America first. The radical Democrats want to destroy America, as we know it. They want to indoctrinate our children and teach them that America is a sinful wicked nation."
+                + "You see that happening all the time and I know it from personal experience what they want to teach your kids, not good. They come home, mommy, daddy, this is what I learned, and you're going, oh no, don't tell me. Let's get them into another school fast. They want to disarm law-abiding citizens, they want to take your guns away and they want to win so far left judges to shred our Constitution."
+                + "It's not happening. They want to tear down symbols of faith and drive Christians and religious believers from the public square. They want to silence your voices on social media and they want the government to censor, muzzle and shut down conservative voices. You know that. If they didn't hate our country, they wouldn't be doing this to our country."
+                + "They wouldn't be doing it because they know better. They know better. As an example, we're building a great wall along the Southern border and it's going up rapidly, going up. And you know five years ago, almost every one of them wanted a wall. Until I came along, and I said, we're going to build a great walk because they could never get it done and then they stopped the funding."
+                + "They made it almost impossible. Few people would have been able to do what we did, but we got it from here, and we got it from there, and we got it from all over the place, and we're building that sucker right now, and it's having a tremendous effect already. Not easy. Highest level. Everything we said it would be. It's moving rapidly, although, the fake news back there, they don't want to talk about it. [Audience shouts \"Boo\"] They don't want to talk about it. Look at all those cameras, do you believe it? Look at all those red lights, don't worry, I won't say anything bad about your network."
+                + "Because a lot of times I get ready to do a number on these phony networks. And you know, you see those red lights go off, off, off, off. They don't want their viewers to see it. But that's OK. I'm not going to say it tonight, I'm going to say your legitimate media. I don't actually mean that. But you look at that, but look at all those cameras."
+                + "You know that's like the Academy Awards used to be because -- before it failed. Do you know why it failed? Do you know why it failed? Because they came after us. That's why it failed. It failed because they had stupid people saying horrible things about us, stupid, stupid people. They are stupid people and their ratings have dropped like a rocket and I love seeing it. I'm telling you."
+                + "Love it. But no matter how hard they try, they will fail, because the people of Texas and the people of America will never surrender our freedom to those people right there. We will stand strong for family, faith, God, and for our country. Last week, a very dumb Democrat candidate for President."
+                + "Nobody noticed it. I noticed it. The flairer, do you remember he was flailing all over the place? I said why is this guy hot? John Cornyn is going to win so easily, just like Ted Cruz won. He's going to win, no matter what happens, but John Cornyn is not talking about Bado anymore, because Bado in a few Short weeks, got rid of guns and got rid of religion.";
+
+/*        String corpus = "Mary had a little lamb\n" +
+                "Little lamb, little lamb\n" +
+                "Mary had a little lamb\n" +
+                "Its fleece was white as snow\n" +
+                "And everywhere that Mary went\n" +
+                "Mary went, Mary went\n" +
+                "Everywhere that Mary went\n" +
+                "The lamb was sure to go\n" +
+                "\n" +
+                "He followed her to school one day\n" +
+                "School one day, school one day\n" +
+                "He followed her to school one day\n" +
+                "Which was against the rule\n" +
+                "It made the children laugh and play\n" +
+                "Laugh and play, laugh and play\n" +
+                "It made the children laugh and play\n" +
+                "To see a lamb at school\n" +
+                "\n" +
+                "And so the teacher turned him out\n" +
+                "Turned him out, turned him out\n" +
+                "And so the teacher turned him out\n" +
+                "But still he lingered near\n" +
+                "And waited patiently\n" +
+                "Patiently, patiently\n" +
+                "And wai-aited patiently\n" +
+                "Til Mary did appear\n" +
+                "\n" +
+                "Mary had a little lamb\n" +
+                "Little lamb, little lamb\n" +
+                "Mary had a little lamb\n" +
+                "Its fleece was white as snow\n" +
+                "And everywhere that Mary went\n" +
+                "Mary went, Mary went\n" +
+                "Everywhere that Mary went\n" +
+                "The lamb was sure to go";*/
+
+/*        String corpus = "Row, row, row your boat\n" +
+                "Gently down the stream\n" +
+                "Merrily merrily, merrily, merrily\n" +
+                "Life is but a dream\n" +
+                "Row, row, row your boat\n" +
+                "Gently down the stream\n" +
+                "Merrily merrily, merrily, merrily\n" +
+                "Life is but a dream\n" +
+                "Row, row, row your boat\n" +
+                "Gently down the stream\n" +
+                "Merrily merrily, merrily, merrily\n" +
+                "Life is but a dream\n" +
+                "Row, row, row your boat\n" +
+                "Gently down the stream\n" +
+                "Merrily merrily, merrily, merrily\n" +
+                "Life is but a dream";*/
 
         Map<String,List<String>> corpusMap = (loadMap(sanitizeCorpus(corpus)));
 
-        System.out.println(writeLines(corpusMap, 1, 35));
+        //Outputs all pairs in the string
+        for(Map.Entry<String, List<String>> entry : corpusMap.entrySet()) {
+            System.out.println("KEY: " + entry.getKey());
+            System.out.println("VALUE: " + entry.getValue());
+            System.out.println("----------------------------");
+        }
+
+       System.out.println(writeLines(corpusMap, 1, 35));
+
+
 
     }
 
@@ -124,8 +184,8 @@ public class Main {
             //Here we check if the key is contained within the map,
             //if it is we add the value to the set
             //Second part is to make sure we do not include duplicate values in the arraylist
-            if(songMap.containsKey(corpusArray[i]) &&
-                !(songMap.get(corpusArray[i]).contains(corpusArray[i+1])))
+            //&& !(songMap.get(corpusArray[i]).contains(corpusArray[i+1]))
+            if(songMap.containsKey(corpusArray[i]))
                 songMap.get(corpusArray[i]).add(corpusArray[i + 1]);
             else{
                 List<String> valList = new ArrayList<>();
